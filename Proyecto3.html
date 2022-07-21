@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="styles.css"
+ 
+
+<head>
+<title>Proyecto3</title>
+</head>
+<body>
+
+
+<div>
+<h1> Background camaleon</h1>
+</div>
+<section> 
+   <div style="text-align:center;">
+    <button  class="btn">Cambio de color</button>
+    <div class="caja">
+    <p id="parrafo"></p>
+    </div>
+    
+</div>
+
+
+ 
+ 
+</section>
+
+
+
+<script type="text/javascript">
+
+
+
+const btn=document.querySelector('button');
+const body=document.querySelector('body');
+const p = document.getElementById("parrafo")
+const colores=['blue','yellow','red','white','brown']
+
+btn.addEventListener('click',fondo);
+
+function fondo() {
+var indice=parseInt(Math.random()*colores.length);
+body.style.backgroundColor=colores[indice];
+p.innerText = colores[indice];
+
+}
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
